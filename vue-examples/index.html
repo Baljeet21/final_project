@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<div id="app">
+    <p>{{ message }}</p>
+    <input type = "text" v-model="message">
+    <input type="text" v-bind:value="message" @keyup=" printMessage">
+    <button @click="printMessage">Print Message</button>
+    <ul>
+        <li v-for="number in list">{{number}}</li>
+    </ul>
+</div>
+
+<script>
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                message: 'Hello Vue!',
+                list: [1, 2, 3, 45]
+            }
+        },
+        methods:{
+            printMessage(){
+                alert(this.message)
+            }
+        }
+    }).mount('#app')
+</script>
+</body>
+</html>

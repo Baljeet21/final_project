@@ -1,35 +1,44 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+header h1 {
+	text-align: center;
+	margin-top: 1rem;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.score_board {
+	text-align: center;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.computer-side img {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+img {
+	width: 10rem;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.main {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.to-the-right{
+	display: flex;
+	justify-content: flex-end;
+}
+
+#play-btn{
+	font-size: 34px;
+	border-radius: 12px;
+}
+
+.container-computer {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
 }

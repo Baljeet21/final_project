@@ -1,5 +1,6 @@
 <template>
 	<div class="container">
+	  <!-- These images are shown always -->
 	  <img src="../assets/rock.png" alt="Rock" type="button" v-on:click="pRock()">
 	  <img src="../assets/paper.png" alt="Paper" type="button" v-on:click="pPaper()"  >
 	  <img src="../assets/scissors.png" alt="Scissors" type="button" v-on:click="pScissors()" >
